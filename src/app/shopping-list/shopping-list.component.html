@@ -2,8 +2,9 @@
   <div class="col">
     <p>Shopping list edits</p>
     <hr>
-    <app-shopping-list-edit></app-shopping-list-edit>
-    <app-shopping-list-edit></app-shopping-list-edit>
+    <app-shopping-list-edit
+      (ingredientAdded)="onIngredientAdded($event)"
+    ></app-shopping-list-edit>
     <ul class="list-group">
       <a
               href="#"
